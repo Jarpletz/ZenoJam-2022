@@ -12,7 +12,9 @@ public class playerController : MonoBehaviour
 
    void Start()
    {
-        
+      rb = getComponent<Rigidbody2D>();
+      gm = GameObject.findWithTag("gameControler").getComponentin<GameManager>();
+
    }
 
    // Update is called once per frame
