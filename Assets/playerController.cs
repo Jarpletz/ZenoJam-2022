@@ -12,8 +12,9 @@ public class playerController : MonoBehaviour
 
    void Start()
    {
-      rb = getComponent<Rigidbody2D>();
-      gm = GameObject.findWithTag("gameControler").getComponentin<GameManager>();
+      rb = GetComponent<Rigidbody2D>();
+      lineRenderer=GetComponentInChildren<LineRenderer>();
+      gm = GameObject.FindWithTag("GameController").GetComponent<GameManager>();
 
    }
 
