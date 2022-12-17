@@ -5,7 +5,7 @@ using UnityEngine;
 public class CopterScript : MonoBehaviour
 {
     [SerializeField] float force = 1;
-    [SerializeField] private float defaltUpVolocity = 1;
+    [SerializeField] float defaltUpVolocity = 1;
     private Vector2 netForce;
     private Vector2 upForce;
     Rigidbody2D rb;
@@ -20,8 +20,11 @@ public class CopterScript : MonoBehaviour
     {
         netForce.x = force * Input.GetAxis("Horizontal");
         netForce.y = force * Input.GetAxis("Vertical");
-        upForce.y = defaltUpVolocity;
-        rb.AddForce(upForce);
+        // upForce.y = defaltUpVolocity - netForce.y;
+        // if (upForce.y > 0)
+        // {
+        //     rb.AddForce(upForce);
+        // }
         rb.AddForce(netForce);
     }
 }
