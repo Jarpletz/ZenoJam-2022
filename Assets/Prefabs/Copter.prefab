@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5777558865503616654}
   - component: {fileID: 5777558865503616655}
   - component: {fileID: 5777558865503616652}
-  - component: {fileID: 5777558865503616653}
   - component: {fileID: 5777558865503616649}
+  - component: {fileID: 7310184320014891558}
   m_Layer: 0
   m_Name: Copter
   m_TagString: Player
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 70632ddfe8e71b04b8f90ef7e29a9e98, type: 3}
+  m_Sprite: {fileID: 93111664, guid: 91c96ea2b6cff704b9c68e7a9e1f447b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,22 +108,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &5777558865503616653
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5777558865503615346}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.12, y: -0.21}
-  serializedVersion: 2
-  m_Radius: 0.86
 --- !u!114 &5777558865503616649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,3 +122,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 0.66
   defaltUpVolocity: 0.24
+--- !u!60 &7310184320014891558
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5777558865503615346}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.71875, y: 1.65625}
+    newSize: {x: 2.9, y: 2.22}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.859375, y: 0.078125}
+      - {x: 1.859375, y: 0.453125}
+      - {x: 1.671875, y: 0.453125}
+      - {x: 1.484375, y: 0.265625}
+      - {x: 1.421875, y: 0.078125}
+      - {x: 0.703125, y: 0.015625}
+      - {x: 0.609375, y: 0.234375}
+      - {x: 0.484375, y: 0.328125}
+      - {x: 1.328125, y: 0.296875}
+      - {x: 1.578125, y: 0.390625}
+      - {x: 1.578125, y: 0.515625}
+      - {x: 1.359375, y: 0.609375}
+      - {x: -1.046875, y: 0.828125}
+      - {x: -1.859375, y: 0.828125}
+      - {x: -1.859375, y: 0.703125}
+      - {x: -1.703125, y: 0.671875}
+      - {x: -0.515625, y: 0.546875}
+      - {x: -0.734375, y: 0.421875}
+      - {x: -1.515625, y: 0.390625}
+      - {x: -1.859375, y: -0.046875}
+      - {x: -1.859375, y: -0.453125}
+      - {x: -1.453125, y: -0.734375}
+      - {x: -1.109375, y: -0.828125}
+      - {x: 0.328125, y: -0.828125}
+      - {x: 0.765625, y: -0.609375}
+      - {x: 1.609375, y: -0.390625}
+      - {x: 1.796875, y: -0.140625}
