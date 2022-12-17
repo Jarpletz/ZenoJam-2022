@@ -4,20 +4,40 @@ using UnityEngine;
 
 public class camScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    [SerializeField] Vector3 copterPoss;
-    [SerializeField] Vector3 camPoss;
-    void Start()
-    {
-        
-    }
+   Transform playerPos;
+   Camera cam;
+   Vector3 lerpPos;
+   float xPos;
+   float cameraWidth;
+  
 
-    // Update is called once per frame
-    void Update()
-    {
-        copterPoss = GameObject.FindWithTag("Player").transform.position;
-        camPoss = Camera.main.transform.position;
-        Camera.main.transform.position = new Vector3(camPoss.x, copterPoss.y, camPoss.z);
+   [SerializeField] Vector2 xBounds;
+   [SerializeField] float lerpSpeed;
+   void Start()
+   {
+      playerPos = GameObject.FindWithTag("Player").transform;
+      cam = Camera.main;
+   }
 
-    }
+   // Update is called once per frame
+   void Update()
+   {
+      cameraWidth= cam.orthographicSize * cam.aspect;
+
+      xPos=playerPos.position.x;
+
+      if (xPos < xBounds.x + cameraWidth)
+      {
+         xPos = xBounds.x + cameraWidth;
+      }
+      else if (xPos > xBounds.y - cameraWidth)
+      {
+         xPos = xBounds.y - cameraWidth;
+      }
+
+      lerpPos.Set(xPos, playerPos.position.y, -1);
+
+      transform.position= Vector3.Lerp(transform.position, lerpPos, lerpSpeed);
+
+   }
 }
