@@ -2824,25 +2824,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2445909968120818643, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: lerpSpeed
-      value: 0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 5734946145512527125, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: m_Intensity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5734946145512527125, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: m_PointLightInnerRadius
-      value: 1.51
-      objectReference: {fileID: 0}
     - target: {fileID: 5777558865503615346, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
       propertyPath: m_Name
       value: Copter
-      objectReference: {fileID: 0}
-    - target: {fileID: 5777558865503616649, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: force
-      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5777558865503616654, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
       propertyPath: m_RootOrder
@@ -2887,42 +2871,6 @@ PrefabInstance:
     - target: {fileID: 5777558865503616654, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5960150146198859220, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9969616
-      objectReference: {fileID: 0}
-    - target: {fileID: 5960150146198859220, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.06534435
-      objectReference: {fileID: 0}
-    - target: {fileID: 5960150146198859220, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.0027730155
-      objectReference: {fileID: 0}
-    - target: {fileID: 5960150146198859220, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.042308025
-      objectReference: {fileID: 0}
-    - target: {fileID: 5960150146198859220, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 4.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704478687224888537, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: m_Intensity
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704478687224888537, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: m_FalloffIntensity
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704478687224888537, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: m_PointLightInnerRadius
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 7704478687224888537, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
-      propertyPath: m_PointLightOuterRadius
-      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
