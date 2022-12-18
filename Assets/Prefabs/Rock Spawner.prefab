@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d2145266118439ebc87bd226a25e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rock: {fileID: 0}
+  rock: {fileID: 8533593291798870997, guid: 9dfd897b226904394ac87a97cc5b4189, type: 3}
   copterPoss: {x: 0, y: 0, z: 0}
   spawnerPoss: {x: 0, y: 0, z: 0}
   spawnRate: 2
+  offSet: 10
