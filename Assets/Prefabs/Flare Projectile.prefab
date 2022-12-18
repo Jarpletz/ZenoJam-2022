@@ -4825,6 +4825,7 @@ GameObject:
   - component: {fileID: 5902341869321696028}
   - component: {fileID: 1112228492886554898}
   - component: {fileID: 3636089273867615310}
+  - component: {fileID: 1942783366552556679}
   m_Layer: 7
   m_Name: Flare Projectile
   m_TagString: Untagged
@@ -4935,5 +4936,18 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1942783366552556679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7908858879304381034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 786a2a5ea5b3eca49af91f09692d9aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTimeAlive: 4
