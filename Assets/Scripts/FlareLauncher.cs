@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlareController : MonoBehaviour
+public class FlareLauncher : MonoBehaviour
 {
    [SerializeField] float lerpSpeed;
    [SerializeField] float launchForce;
