@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7674510869243239294}
   - component: {fileID: 7674510869243239293}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rock Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
