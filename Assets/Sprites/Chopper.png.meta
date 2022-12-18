@@ -121,9 +121,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 712
+        y: 713
         width: 119
-        height: 53
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,11 +163,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 707
-        width: 10
-        height: 5
+        y: 702
+        width: 5
+        height: 10
       alignment: 9
-      pivot: {x: 0.95, y: 0.5}
+      pivot: {x: 0.5, y: 0.052075196}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,6 +175,69 @@ TextureImporter:
       bones: []
       spriteID: ab3ad02bec61a0042a5cdec26da7408a
       internalID: 529060480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flare
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 693
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd9440c414f733438e8855190a07077
+      internalID: 1697107095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rotor
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 779
+        width: 107
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0950973c6fbda4bb9bf5199612137e
+      internalID: 1352596213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tail_Rotor
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 777
+        width: 3
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e20d913189f53c46928e27524c7a108
+      internalID: -1151726339
       vertices: []
       indices: 
       edges: []
@@ -190,8 +253,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Rotor: 1352596213
       Chopper_Default: 93111664
+      Flare: 1697107095
       Spotlight: 529060480
+      Tail_Rotor: -1151726339
       CHopper_Spin: 1803898840
   spritePackingTag: 
   pSDRemoveMatte: 0
