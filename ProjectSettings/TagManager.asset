@@ -14,8 +14,8 @@ TagManager:
   - Copter
   - Water
   - UI
-  - rocks
-  - 
+  - Rocks
+  - Flare
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1752624321
+    locked: 0
+  - name: Rocks
+    uniqueID: 1045758351
     locked: 0

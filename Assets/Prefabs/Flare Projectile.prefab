@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 794500944728531575}
   - component: {fileID: 6644634766221112424}
   - component: {fileID: 5258653255012793396}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Movement PS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4825,7 +4825,7 @@ GameObject:
   - component: {fileID: 5902341869321696028}
   - component: {fileID: 1112228492886554898}
   - component: {fileID: 3636089273867615310}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Flare Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
