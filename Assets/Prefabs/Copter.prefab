@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1211313160638275006}
   - component: {fileID: 3592041002705409552}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tail Rotor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 445982195999879298}
   - component: {fileID: 2094053622528754602}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 8392373383043741251}
   - component: {fileID: 8521368076782527603}
   - component: {fileID: 2445909968120818643}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,6 +314,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lerpSpeed: 0.04
+  launchForce: 6
+  flareObject: {fileID: 7908858879304381034, guid: b913f47f236e1fd4886388fa25901a9b, type: 3}
 --- !u!1 &5402011258518912761
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3694560488765289192}
   - component: {fileID: 7704478687224888537}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -439,7 +441,7 @@ GameObject:
   - component: {fileID: 5777558865503616649}
   - component: {fileID: 1232836974752589444}
   - component: {fileID: 2467547296869421593}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Copter
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -598,7 +600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5960150146198859220}
   - component: {fileID: 5490780823316630598}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rotor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,7 +685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3579885517694945750}
   - component: {fileID: 5734946145512527125}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
