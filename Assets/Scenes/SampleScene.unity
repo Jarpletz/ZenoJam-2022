@@ -2824,9 +2824,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2445909968120818643, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
+      propertyPath: lerpSpeed
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 5734946145512527125, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
       propertyPath: m_Intensity
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5734946145512527125, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
       propertyPath: m_PointLightInnerRadius
@@ -2838,7 +2842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5777558865503616649, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
       propertyPath: force
-      value: 20
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5777558865503616654, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
       propertyPath: m_RootOrder
@@ -2883,6 +2887,26 @@ PrefabInstance:
     - target: {fileID: 5777558865503616654, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960150146198859220, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9969616
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960150146198859220, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.06534435
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960150146198859220, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0027730155
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960150146198859220, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.042308025
+      objectReference: {fileID: 0}
+    - target: {fileID: 5960150146198859220, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 4.86
       objectReference: {fileID: 0}
     - target: {fileID: 7704478687224888537, guid: 9319bcbbeeb324497b5170d6ed96e0b3, type: 3}
       propertyPath: m_Intensity
@@ -3072,7 +3096,7 @@ MonoBehaviour:
   m_Intensity: 0.6
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000c1ec7668
+  m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
