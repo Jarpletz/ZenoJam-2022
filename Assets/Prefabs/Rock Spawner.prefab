@@ -47,6 +47,6 @@ MonoBehaviour:
   rock: {fileID: 8533593291798870997, guid: 9dfd897b226904394ac87a97cc5b4189, type: 3}
   copterPoss: {x: 0, y: 0, z: 0}
   spawnerPoss: {x: 0, y: 0, z: 0}
-  spawnRate: 1.03
+  spawnRate: 3.13
   startTorque: 1
   offSet: 17.03
