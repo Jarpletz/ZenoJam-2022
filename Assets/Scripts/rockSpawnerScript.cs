@@ -11,7 +11,7 @@ public class rockSpawnerScript : MonoBehaviour
    [SerializeField] float startTorque;
     private float timer = 0;
     
-    [SerializeField] private float offSet = 10;
+    [SerializeField] private float offSet = 18;
     // Start is called before the first frame update
     void Start()
     {
