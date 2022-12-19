@@ -42,6 +42,7 @@ public class rockScript : MonoBehaviour
    private void OnCollisionEnter2D(Collision2D collision)
    {
       transform.up = Vector3.up;
+      rb.angularVelocity = 0;
       boulderCollider.enabled = false;
       sp.enabled = false;
       destructionParticles.Play();

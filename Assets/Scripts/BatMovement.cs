@@ -9,17 +9,21 @@ public class BatMovement : MonoBehaviour
    [SerializeField] float speed;
    [SerializeField] float distanceThreshold;
 
+
+
    Vector3 direction;
    Vector3 scaleFlip;
 
    int pointDir=1;
    int currentTarget=0;
 
+   EnemyHealth health;
    Rigidbody2D rb;
 
    void Start()
    {
       rb = GetComponent<Rigidbody2D>();
+      health = GetComponent<EnemyHealth>();
 
       transform.position = points[0].position;
    }
@@ -27,6 +31,11 @@ public class BatMovement : MonoBehaviour
    // Update is called once per frame
    void Update()
    {
+      if (!health.isAlive)
+      {
+         Destroy(gameObject);
+      }
+
       if (Vector3.Distance(transform.position, points[currentTarget].position) < distanceThreshold)
       {//If close to the targeted point
 
