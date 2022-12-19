@@ -15,12 +15,15 @@ public class BatMovement : MonoBehaviour
 
 
 
+
+
    Vector3 direction;
    Vector3 scaleFlip;
 
    int pointDir=1;
    int currentTarget=0;
 
+   EnemyHealth health;
    Rigidbody2D rb;
    private Vector2 netForce;
    private int deadLayer;
@@ -29,7 +32,12 @@ public class BatMovement : MonoBehaviour
    void Start()
    {
       rb = GetComponent<Rigidbody2D>();
+// <<<<<<< HEAD
       deadLayer = LayerMask.NameToLayer("Dead");
+// =======
+//       health = GetComponent<EnemyHealth>();
+//
+// >>>>>>> 27553bbc65df17634a657c66d3d754359fc1be5c
       transform.position = points[0].position;
       Player = GameObject.FindWithTag("Player");
 
@@ -38,7 +46,35 @@ public class BatMovement : MonoBehaviour
    // Update is called once per frame
    void Update()
    {
+// <<<<<<< HEAD
       if (alive)
+// =======
+//       if (!health.isAlive)
+//       {
+//          Destroy(gameObject);
+//       }
+//
+//       if (Vector3.Distance(transform.position, points[currentTarget].position) < distanceThreshold)
+//       {//If close to the targeted point
+//
+//          if(currentTarget == 0 && pointDir == -1)
+//          {
+//             pointDir = 1;
+//          }//If has reached the first point, turn around
+//          else if(currentTarget == points.Length - 1 && pointDir == 1)
+//          {
+//             pointDir = -1;
+//          }//If has reached the last point, turn around
+//
+//          currentTarget += pointDir;
+//       }
+//
+//       direction= Vector3.MoveTowards(transform.position, points[currentTarget].position, speed*Time.deltaTime);
+//
+//       transform.position = direction;
+//
+//       if (points[currentTarget].position.x > transform.position.x)
+// >>>>>>> 27553bbc65df17634a657c66d3d754359fc1be5c
       {
          if (Vector3.Distance(transform.position, points[currentTarget].position) < distanceThreshold)
          {

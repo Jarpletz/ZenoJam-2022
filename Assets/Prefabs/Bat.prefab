@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 5899905960067580926}
   - component: {fileID: 5986523010151254401}
   - component: {fileID: 1119799202553142599}
+  - component: {fileID: 8144416488412503879}
   m_Layer: 8
   m_Name: The Bat
   m_TagString: Bat
@@ -193,6 +194,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8144416488412503879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818378718581320923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96246485a3ea2c440935328d6fe1c1f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAlive: 1
 --- !u!1 &3555024572905564173
 GameObject:
   m_ObjectHideFlags: 0
