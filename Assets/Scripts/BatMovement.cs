@@ -5,16 +5,21 @@ using UnityEngine.UIElements;
 
 public class BatMovement : MonoBehaviour
 {
-   // Start is called before the first frame update
+  
+   [Header ("Movement")]
    [SerializeField] Transform[] points;
    [SerializeField] float speed;
    [SerializeField] float distanceThreshold;
-   GameObject Player;
    [SerializeField] float slownessMultiplier = 2;
 
+   [Header("Damage")]
+   [SerializeField] float damage;
+   [SerializeField] float resetDelay;
+   float delayLeft = 0f;
 
 
-
+   GameObject Player;
+   GameManager gm;
 
    Vector3 direction;
    Vector3 scaleFlip;
@@ -35,6 +40,7 @@ public class BatMovement : MonoBehaviour
       health = GetComponent<EnemyHealth>();
       transform.position = points[0].position;
       Player = GameObject.FindWithTag("Player");
+      gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
 
    }
 
@@ -83,6 +89,11 @@ public class BatMovement : MonoBehaviour
          gameObject.layer = deadLayer;
       }
 
+      if (delayLeft < resetDelay)
+      {
+         delayLeft += Time.deltaTime;
+      }
+
    }
 
    private void OnDrawGizmos()
@@ -100,6 +111,11 @@ public class BatMovement : MonoBehaviour
          Player.GetComponent<Rigidbody2D>().velocity /= slownessMultiplier;
          health.isAlive = false;
 
+         if(delayLeft>= resetDelay)
+         {
+            gm.health -= damage;
+            delayLeft = 0;
+         }
          //Do What happens if it hits the player here
       }
 
