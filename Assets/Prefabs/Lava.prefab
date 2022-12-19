@@ -9752,6 +9752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccb9e2ffed2e40f488530cbf890b17fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damagePerSecond: 30
   yVelocity: 1.5
   yOffset: 7
   slownessMultiplier: 2

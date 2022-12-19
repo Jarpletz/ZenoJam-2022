@@ -6,10 +6,12 @@ public class rockScript : MonoBehaviour
 {
    [SerializeField] private float speed;
    [SerializeField] float deadZone;
+   [SerializeField] private float damage;
    [SerializeField] ParticleSystem destructionParticles;
 
    Transform PlayerPos;
 
+   GameManager gm;
 
    Rigidbody2D rb;
    Collider2D boulderCollider;
@@ -23,6 +25,7 @@ public class rockScript : MonoBehaviour
       boulderCollider = GetComponent<Collider2D>();
       sp= GetComponent<SpriteRenderer>();
       PlayerPos = GameObject.FindWithTag("Player").transform;
+      gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
    }
 
    // Update is called once per frame
@@ -47,6 +50,11 @@ public class rockScript : MonoBehaviour
       sp.enabled = false;
       destructionParticles.Play();
       Destroy(gameObject, 1);
+
+      if (collision.gameObject.CompareTag("Player"))
+      {
+         gm.health -= damage;
+      }
    }
 
 

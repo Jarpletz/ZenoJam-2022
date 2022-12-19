@@ -11,6 +11,14 @@ public class FlareLauncher : MonoBehaviour
    Vector3 mousePos;
    Vector2 DirToMouse;
 
+   GameManager gm;
+
+   private void Start()
+   {
+      gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
+   }
+
    private void Update()
    {
       mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -20,11 +28,12 @@ public class FlareLauncher : MonoBehaviour
       transform.up =Vector2.Lerp(transform.up,DirToMouse,lerpSpeed);
       //Debug.DrawRay(transform.position,transform.up*10);
 
-      if (Input.GetMouseButtonDown(0))
+      if (Input.GetMouseButtonDown(0) && gm.flares>0)
       {
          GameObject flare = Instantiate(flareObject);
          flare.transform.position = transform.position;
          flare.GetComponent<Rigidbody2D>().AddForce(DirToMouse * launchForce, ForceMode2D.Impulse);
+         gm.flares--;
       }
    }
 }
