@@ -7,7 +7,7 @@ public class LevelGenerator : MonoBehaviour
 {
    [SerializeField] float spaceBetweenLevels;
    [SerializeField] GameObject[] Levels;
-   [SerializeField] List<GameObject> ActiveLevels= new List<GameObject>();
+   public List<GameObject> ActiveLevels= new List<GameObject>();
    
 
    Transform PlayerPos;

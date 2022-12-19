@@ -9,10 +9,11 @@ public class camScript : MonoBehaviour
    Vector3 lerpPos;
    float xPos;
    float cameraWidth;
-  
-
+   
+   [SerializeField]float yOffset;
    [SerializeField] Vector2 xBounds;
    [SerializeField] float lerpSpeed;
+
    void Start()
    {
       playerPos = GameObject.FindWithTag("Player").transform;
@@ -35,7 +36,7 @@ public class camScript : MonoBehaviour
          xPos = xBounds.y - cameraWidth;
       }
 
-      lerpPos.Set(xPos, playerPos.position.y, -1);
+      lerpPos.Set(xPos, playerPos.position.y+yOffset, -1);
 
       transform.position= Vector3.Lerp(transform.position, lerpPos, lerpSpeed);
 

@@ -7,6 +7,7 @@ TagManager:
   - CamControl
   - Copter
   - Rock
+  - LevelGenerator
   layers:
   - Default
   - TransparentFX
@@ -41,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 995145039
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -49,4 +53,7 @@ TagManager:
     locked: 0
   - name: Rocks
     uniqueID: 1045758351
+    locked: 0
+  - name: Lava
+    uniqueID: 3980595775
     locked: 0

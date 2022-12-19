@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CopterScript : MonoBehaviour
 {
-    [SerializeField] float force = 1;
+    public float force = 1;
     [SerializeField] private float verticalForceDamp = 1;
     private Vector2 netForce;
     Rigidbody2D rb;

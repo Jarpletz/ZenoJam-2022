@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8389225380920811574}
   m_Layer: 0
   m_Name: Level Generator
-  m_TagString: Untagged
+  m_TagString: LevelGenerator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,4 +47,5 @@ MonoBehaviour:
   spaceBetweenLevels: 20
   Levels:
   - {fileID: 5062101662943471745, guid: 6a8f3c0380f243142b2aa1d4eff1f258, type: 3}
-  ActiveLevels: []
+  ActiveLevels:
+  - {fileID: 0}
