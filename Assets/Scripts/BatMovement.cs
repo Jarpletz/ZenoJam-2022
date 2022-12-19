@@ -9,7 +9,6 @@ public class BatMovement : MonoBehaviour
    [SerializeField] Transform[] points;
    [SerializeField] float speed;
    [SerializeField] float distanceThreshold;
-   private bool alive = true;
    GameObject Player;
    [SerializeField] float slownessMultiplier = 2;
 
@@ -32,12 +31,8 @@ public class BatMovement : MonoBehaviour
    void Start()
    {
       rb = GetComponent<Rigidbody2D>();
-// <<<<<<< HEAD
       deadLayer = LayerMask.NameToLayer("Dead");
-// =======
-//       health = GetComponent<EnemyHealth>();
-//
-// >>>>>>> 27553bbc65df17634a657c66d3d754359fc1be5c
+      health = GetComponent<EnemyHealth>();
       transform.position = points[0].position;
       Player = GameObject.FindWithTag("Player");
 
@@ -46,35 +41,7 @@ public class BatMovement : MonoBehaviour
    // Update is called once per frame
    void Update()
    {
-// <<<<<<< HEAD
-      if (alive)
-// =======
-//       if (!health.isAlive)
-//       {
-//          Destroy(gameObject);
-//       }
-//
-//       if (Vector3.Distance(transform.position, points[currentTarget].position) < distanceThreshold)
-//       {//If close to the targeted point
-//
-//          if(currentTarget == 0 && pointDir == -1)
-//          {
-//             pointDir = 1;
-//          }//If has reached the first point, turn around
-//          else if(currentTarget == points.Length - 1 && pointDir == 1)
-//          {
-//             pointDir = -1;
-//          }//If has reached the last point, turn around
-//
-//          currentTarget += pointDir;
-//       }
-//
-//       direction= Vector3.MoveTowards(transform.position, points[currentTarget].position, speed*Time.deltaTime);
-//
-//       transform.position = direction;
-//
-//       if (points[currentTarget].position.x > transform.position.x)
-// >>>>>>> 27553bbc65df17634a657c66d3d754359fc1be5c
+      if (health.isAlive)
       {
          if (Vector3.Distance(transform.position, points[currentTarget].position) < distanceThreshold)
          {
@@ -131,14 +98,14 @@ public class BatMovement : MonoBehaviour
       if (collision.gameObject.CompareTag("Player"))
       {
          Player.GetComponent<Rigidbody2D>().velocity /= slownessMultiplier;
-         alive = false;
+         health.isAlive = false;
 
          //Do What happens if it hits the player here
       }
 
       if (collision.gameObject.CompareTag("Flare"))
       {
-         alive = false;
+         health.isAlive = false;
       }
    }
    
