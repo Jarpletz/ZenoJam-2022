@@ -604,6 +604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 7674510869243239293, guid: 55d84a706081b4c739495a95c97b4fff, type: 3}
+      propertyPath: startTorque
+      value: 0.75
+      objectReference: {fileID: 0}
     - target: {fileID: 7674510869243239294, guid: 55d84a706081b4c739495a95c97b4fff, type: 3}
       propertyPath: m_RootOrder
       value: 4
