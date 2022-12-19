@@ -9,6 +9,9 @@ TagManager:
   - Rock
   - LevelGenerator
   - GameManager
+  - Bat
+  - Undefined
+  - Flare
   layers:
   - Default
   - TransparentFX
@@ -19,7 +22,7 @@ TagManager:
   - Rocks
   - Flare
   - Enemy
-  - 
+  - Dead
   - 
   - 
   - 

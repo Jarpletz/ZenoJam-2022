@@ -21,8 +21,9 @@ public class FlareItemScript : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        print("here");
         if (other.gameObject.CompareTag("Player"))
         {
             gm.flares += flareModifyer;
