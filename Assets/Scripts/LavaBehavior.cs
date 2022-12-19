@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class LavaBehavior : MonoBehaviour
 {
-   
+   GameManager gm;
    LevelGenerator levelGenerator;
    GameObject Player;
    Vector3 nextPos;
 
+   [SerializeField] float damagePerSecond;
    [SerializeField] float yVelocity;
    [SerializeField] float yOffset;
 
@@ -18,6 +20,8 @@ public class LavaBehavior : MonoBehaviour
    {
       levelGenerator = GameObject.FindWithTag("LevelGenerator").GetComponent<LevelGenerator>();
       Player = GameObject.FindWithTag("Player");
+      gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+
    }
 
    // Update is called once per frame
@@ -41,6 +45,14 @@ public class LavaBehavior : MonoBehaviour
       {
          Player.GetComponent<Rigidbody2D>().velocity /= slownessMultiplier;
          Player.GetComponent<CopterScript>().force /= slownessMultiplier;
+      }
+   }
+
+   private void OnTriggerStay2D(Collider2D collision)
+   {
+      if (collision.gameObject.CompareTag("Player"))
+      {
+         gm.health -= damagePerSecond * Time.deltaTime;
       }
    }
 

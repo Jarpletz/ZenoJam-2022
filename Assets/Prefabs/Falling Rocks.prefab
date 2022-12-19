@@ -4993,6 +4993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.25
   deadZone: 50
+  damage: 10
   destructionParticles: {fileID: 7389167040310771653}
 --- !u!50 &1264743444015232399
 Rigidbody2D:

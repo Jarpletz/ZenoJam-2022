@@ -59,30 +59,6 @@ public class CopterScript : MonoBehaviour
         rb.transform.localScale = newScail;
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        if(col.collider.name == "Falling Rocks(Clone)")
-        {
-            gameManager.health -= 20;
-        }
-        if(col.collider.name == "The Bat")
-        {
-            gameManager.health -= 20;
-        }
-
-        // if (col.collider.name == "Foreground")
-        //{
-        //
-        // }
-    }
-
-    private void OnTriggerStay2D(Collider2D col)
-    {
-        if (col.name == "Lava" )
-        {
-            gameManager.health -= 10 * Time.deltaTime;
-        }
-    }
     
 }
 
