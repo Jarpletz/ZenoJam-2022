@@ -11,19 +11,13 @@ public class BatMovement : MonoBehaviour
    [SerializeField] float distanceThreshold;
    GameObject Player;
    [SerializeField] float slownessMultiplier = 2;
-
-
-
-
-
    Vector3 direction;
    Vector3 scaleFlip;
-
    int pointDir=1;
    int currentTarget=0;
-
    EnemyHealth health;
    Rigidbody2D rb;
+   private Collider2D col;
    private Vector2 netForce;
    private int deadLayer;
 
@@ -31,7 +25,7 @@ public class BatMovement : MonoBehaviour
    void Start()
    {
       rb = GetComponent<Rigidbody2D>();
-      deadLayer = LayerMask.NameToLayer("Dead");
+      col = GetComponent<Collider2D>();
       health = GetComponent<EnemyHealth>();
       transform.position = points[0].position;
       Player = GameObject.FindWithTag("Player");
@@ -77,6 +71,8 @@ public class BatMovement : MonoBehaviour
       else
       {
          
+         col.enabled = false;
+         rb.rotation = 180;
          netForce[0] = 0;
          netForce[1] = -2;
          rb.AddForce(netForce);
@@ -108,6 +104,4 @@ public class BatMovement : MonoBehaviour
          health.isAlive = false;
       }
    }
-   
-
 }
