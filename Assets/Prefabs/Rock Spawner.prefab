@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7674510869243239294}
   - component: {fileID: 7674510869243239293}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Rock Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,4 +48,5 @@ MonoBehaviour:
   copterPoss: {x: 0, y: 0, z: 0}
   spawnerPoss: {x: 0, y: 0, z: 0}
   spawnRate: 2
+  startTorque: 1
   offSet: 10

@@ -8,6 +8,7 @@ public class rockSpawnerScript : MonoBehaviour
     [SerializeField] Vector3 copterPoss;
     [SerializeField] Vector3 spawnerPoss;
     [SerializeField] float spawnRate = 2;
+   [SerializeField] float startTorque;
     private float timer = 0;
     
     [SerializeField] private float offSet = 10;
@@ -36,9 +37,11 @@ public class rockSpawnerScript : MonoBehaviour
 
     void spawnRock()
     {
+        //Debug.Log("Spawning Rock");
         float lowPoint = transform.position.x - offSet;
         float highPoint = transform.position.x + offSet;
-        Instantiate(rock, new Vector3(Random.Range(lowPoint,highPoint),
+        GameObject Rock =Instantiate(rock, new Vector3(Random.Range(lowPoint,highPoint),
             transform.position.y, transform.position.z), transform.rotation);
+      Rock.GetComponent<Rigidbody2D>().AddTorque(Random.Range(-startTorque, startTorque), ForceMode2D.Impulse);
     }
 }

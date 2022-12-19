@@ -461,7 +461,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -469,6 +469,132 @@ TextureImporter:
       bones: []
       spriteID: 9fdabb4fa4d9246498fb75b9b8273a60
       internalID: 2053884457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Particle_1
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1000
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb897c21eddc8d047a44c91569f8229b
+      internalID: -2112022875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Particle_2
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 998
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140a9fb4988be6a42803f3ddbcab9acf
+      internalID: 1582482613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Particle_3
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 994
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3639aefa684f14a4a9a40600f90822f2
+      internalID: 85194292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Particle_4
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 990
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd666ebe875f584abb14541b2b95ab5
+      internalID: -1424851267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Particle_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 982
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e55558bfa02c044a06ca79afd70abc
+      internalID: 37853185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder_Particle_6
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 981
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b488dcfa29e8bbb42aafa598b226bcaa
+      internalID: -598689292
       vertices: []
       indices: 
       edges: []
@@ -484,23 +610,29 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Floor_Top: -792221919
+      Floor_TL: 2029078956
       Floor_Left: -458109617
       Floor_TB: -509689590
       Floor_BRL: -669366105
       Floor_ALL: 1453730141
+      Boulder_Particle_1: -2112022875
+      Boulder_Particle_3: 85194292
       Floor_Bottom: 1731495261
       Floor_TRL: 1422066816
+      Boulder_Particle_5: 37853185
       Floor: 1152305508
       Floor_RL: -891937068
       Floor_Right: 591341358
       Floor_TR: 718349209
       Floor_BR: -1775376863
+      Boulder_Particle_4: -1424851267
       Floor_TBR: -698866286
       Bolder: 2053884457
+      Boulder_Particle_2: 1582482613
       Floor_TBL: -2023867120
+      Boulder_Particle_6: -598689292
       Floor_BL: -766051018
-      Floor_TL: 2029078956
+      Floor_Top: -792221919
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
