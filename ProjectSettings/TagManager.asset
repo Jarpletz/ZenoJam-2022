@@ -8,6 +8,7 @@ TagManager:
   - Copter
   - Rock
   - LevelGenerator
+  - GameManager
   layers:
   - Default
   - TransparentFX
