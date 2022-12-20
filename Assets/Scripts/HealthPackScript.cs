@@ -19,7 +19,7 @@ public class HealthPackScript : MonoBehaviour
     {
         gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
-
+        PlayerPos = GameObject.FindWithTag("Player").transform;
     }
 
     // Update is called once per frame
