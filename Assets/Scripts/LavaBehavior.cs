@@ -5,22 +5,17 @@ using UnityEngine;
 
 public class LavaBehavior : MonoBehaviour
 {
-   GameManager gm;
    LevelGenerator levelGenerator;
-   GameObject Player;
    Vector3 nextPos;
 
-   [SerializeField] float damagePerSecond;
    [SerializeField] float yVelocity;
    [SerializeField] float yOffset;
 
-   [SerializeField] float slownessMultiplier;
 
    void Start()
    {
       levelGenerator = GameObject.FindWithTag("LevelGenerator").GetComponent<LevelGenerator>();
-      Player = GameObject.FindWithTag("Player");
-      gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+      
 
    }
 
@@ -39,30 +34,6 @@ public class LavaBehavior : MonoBehaviour
 
    }
 
-   private void OnTriggerEnter2D(Collider2D collision)
-   {//If the Player enters the Lava
-      if (collision.gameObject.CompareTag("Player"))
-      {
-         Player.GetComponent<Rigidbody2D>().velocity /= slownessMultiplier;
-         Player.GetComponent<CopterScript>().force /= slownessMultiplier;
-      }
-   }
-
-   private void OnTriggerStay2D(Collider2D collision)
-   {
-      if (collision.gameObject.CompareTag("Player"))
-      {
-         gm.health -= damagePerSecond * Time.deltaTime;
-      }
-   }
-
-   private void OnTriggerExit2D(Collider2D collision)
-   {
-      if (collision.gameObject.CompareTag("Player"))
-      {
-         Player.GetComponent<Rigidbody2D>().velocity *= slownessMultiplier;
-         Player.GetComponent<CopterScript>().force *= slownessMultiplier;
-      }
-   }
+   
 
 }

@@ -608,7 +608,7 @@ TextureImporter:
         width: 16
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -629,7 +629,7 @@ TextureImporter:
         width: 2
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -650,7 +650,7 @@ TextureImporter:
         width: 4
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -671,7 +671,7 @@ TextureImporter:
         width: 2
         height: 2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -692,7 +692,7 @@ TextureImporter:
         width: 3
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -713,7 +713,7 @@ TextureImporter:
         width: 3
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -721,6 +721,48 @@ TextureImporter:
       bones: []
       spriteID: faf69132d329ee646a191140419104b8
       internalID: -379376140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lavafall_mid
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 973
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a10f44de1ad0f0408d6e867f50b685d
+      internalID: 371478258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lavafall_bottom
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 941
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941c7818209433040895eb7e217536fd
+      internalID: 1106036957
       vertices: []
       indices: 
       edges: []
@@ -736,7 +778,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Floor_Top: -792221919
+      Floor_TL: 2029078956
       Floor_Left: -458109617
       Floor_TB: -509689590
       Floor_BRL: -669366105
@@ -749,12 +791,14 @@ TextureImporter:
       Floor_TRL: 1422066816
       Boulder_Particle_5: 37853185
       Stalagtite: 20944418
+      Lavafall_bottom: 1106036957
       Floor: 1152305508
       Floor_RL: -891937068
       Floor_Right: 591341358
       Floor_TR: 718349209
       Floor_BR: -1775376863
       Boulder_Particle_4: -1424851267
+      Lavafall_mid: 371478258
       Floor_TBR: -698866286
       Stalagtite_Particle_1: -1194964266
       Bolder: 2053884457
@@ -764,7 +808,7 @@ TextureImporter:
       Boulder_Particle_6: -598689292
       Floor_BL: -766051018
       Stalagtite_Particle_3: 1289894450
-      Floor_TL: 2029078956
+      Floor_Top: -792221919
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

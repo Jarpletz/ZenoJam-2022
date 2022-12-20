@@ -20,10 +20,12 @@ public class FlareItemScript : MonoBehaviour
     {
         gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
         rb = GetComponent<Rigidbody2D>();
-    }
+        PlayerPos = GameObject.FindWithTag("Player").transform;
 
-    // Update is called once per frame
-    void Update()
+   }
+
+   // Update is called once per frame
+   void Update()
     {
         netForce[0] = 0;
         netForce[1] = -speed;
@@ -37,7 +39,7 @@ public class FlareItemScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("here");
+        //print("here");
         if (other.gameObject.CompareTag("Player"))
         {
             gm.flares += flareModifyer;
