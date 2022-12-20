@@ -34,16 +34,13 @@ public class Stalagtite : MonoBehaviour
     void Update()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 50, raycastLayer);
+
         if (hit.collider != null)
         {
             Debug.DrawLine(transform.position, hit.point);
             if (hit.collider == playerCol)
             {
-                print("here");
                 rb.isKinematic = false;
-                netForce[0] = 0;
-                netForce[1] = -speed;
-                rb.AddForce(netForce);
             }
         }
     }
