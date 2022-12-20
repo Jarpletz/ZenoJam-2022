@@ -5,12 +5,17 @@ using UnityEngine.UIElements;
 
 public class BatMovement : MonoBehaviour
 {
-  
+   [SerializeField] float damage;
+   [SerializeField] Sprite deadSprite;
    [Header ("Movement")]
    [SerializeField] Transform[] points;
    [SerializeField] float speed;
    [SerializeField] float distanceThreshold;
    [SerializeField] float slownessMultiplier = 2;
+
+   
+
+
    GameObject Player;
    GameManager gm;
    Vector3 direction;
@@ -20,7 +25,7 @@ public class BatMovement : MonoBehaviour
    EnemyHealth health;
    Rigidbody2D rb;
    private Collider2D col;
-   private Vector2 netForce;
+   private Vector2 deadForce;
    private int deadLayer;
 
 
@@ -60,14 +65,13 @@ public class BatMovement : MonoBehaviour
 
          transform.position = direction;
 
-         if (points[currentTarget].position.x > transform.position.x)
+        
+         if (points[currentTarget].position.x > transform.position.x && transform.localScale.x < 0 ||
+             points[currentTarget].position.x < transform.position.x && transform.localScale.x > 0)
          {
-            scaleFlip.Set(1, 1, 1);
-         }
-         else
-         {
-            scaleFlip.Set(-1, 1, 1);
-         }
+            scaleFlip.Set(-transform.localScale.x, transform.localScale.y, 1);
+            transform.localScale = scaleFlip;
+         }// Set the scale to make the demon face the player on the x-axis
 
          transform.localScale = scaleFlip;
       }
@@ -76,10 +80,11 @@ public class BatMovement : MonoBehaviour
          
          col.enabled = false;
          rb.rotation = 180;
-         netForce[0] = 0;
-         netForce[1] = -2;
-         rb.AddForce(netForce);
+         deadForce.Set(0, -2);
+         rb.AddForce(deadForce);
          gameObject.layer = deadLayer;
+         GetComponent<Animator>().enabled = false;
+         GetComponent<SpriteRenderer>().sprite = deadSprite;
       }
    }
 
@@ -97,10 +102,9 @@ public class BatMovement : MonoBehaviour
       {
          Player.GetComponent<Rigidbody2D>().velocity /= slownessMultiplier;
          health.isAlive = false;
-         //Do What happens if it hits the player here
+         gm.health -= damage;
       }
-
-      if (collision.gameObject.CompareTag("Flare"))
+      else if (collision.gameObject.CompareTag("Flare"))
       {
          health.isAlive = false;
       }
