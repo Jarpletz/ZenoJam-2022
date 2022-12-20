@@ -13,7 +13,7 @@ public class CopterScript : MonoBehaviour
     private bool checkVol = true;
     private Vector3 newScail;
 
-    [SerializeField] GameManager gameManager;
+    GameManager gameManager;
     
     private int key;
     // Start is called before the first frame update
