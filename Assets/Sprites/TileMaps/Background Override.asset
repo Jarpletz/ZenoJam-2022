@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4c779848d9dd029409ca676b49e10a18, type: 3}
-  m_Name: New Rule Override Tile
+  m_Name: Background Override
   m_EditorClassIdentifier: 
   m_Tile: {fileID: 11400000, guid: bfd8f5877134a4f49956f3ccf8f219ea, type: 2}
   m_Sprites:

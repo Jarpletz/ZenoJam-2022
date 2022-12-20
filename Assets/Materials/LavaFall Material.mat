@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lava Material
+  m_Name: LavaFall Material
   m_Shader: {fileID: -6465566751694194690, guid: ab94d80a8f865824293674ef9746a7fa, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -53,10 +53,10 @@ Material:
     - _EnableExternalAlpha: 0
     - _InnerOutline: 0.5
     - _OuterOutline: 0.2
-    - _PixelSize: 512
+    - _PixelSize: 1024
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Scale: 1
+    - _Scale: 3.75
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color1: {r: 1.8509804, g: 0.21176471, b: 0, a: 1}
@@ -64,10 +64,10 @@ Material:
     - _Color3: {r: 2, g: 0.14117648, b: 0.007843138, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Speed1: {r: 0.4, g: -0.92, b: 0, a: 0}
-    - _Speed2: {r: -0.4, g: 0.79, b: 0, a: 0}
+    - _Speed1: {r: 0.4, g: 1.5, b: 0, a: 0}
+    - _Speed2: {r: -0.4, g: 1.5, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &4883490626115863495
+--- !u!114 &2650658971678272031
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

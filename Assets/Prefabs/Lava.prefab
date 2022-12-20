@@ -9637,6 +9637,7 @@ GameObject:
   - component: {fileID: 8979027969565029043}
   - component: {fileID: 8979027969565029041}
   - component: {fileID: 8979027969565029040}
+  - component: {fileID: 2856747985146736587}
   m_Layer: 0
   m_Name: Lava
   m_TagString: Untagged
@@ -9752,9 +9753,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccb9e2ffed2e40f488530cbf890b17fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePerSecond: 30
   yVelocity: 1.5
   yOffset: 7
+--- !u!114 &2856747985146736587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8979027969565029069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 435e2f2037df4124ca84d2a7b5dddb9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePerSecond: 30
   slownessMultiplier: 2
 --- !u!1 &8979027970731616398
 GameObject:
