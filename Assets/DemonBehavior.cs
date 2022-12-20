@@ -7,6 +7,7 @@ public class DemonBehavior : MonoBehaviour
 
    [SerializeField] Transform head;
    [SerializeField] ParticleSystem flamePS;
+   [SerializeField] float lookLerpSpeed;
    [Header("Attacking")]
    [SerializeField] float attackRange;
    [SerializeField] float attackCooldown;
@@ -22,6 +23,8 @@ public class DemonBehavior : MonoBehaviour
    Transform PlayerPos;
    GameManager gm;
 
+   Animator animator;
+   EnemyHealth health;
 
    Vector3 DirToPlayer;
    Vector3 directionScale;
@@ -33,11 +36,12 @@ public class DemonBehavior : MonoBehaviour
    {
       PlayerPos = GameObject.FindWithTag("Player").transform;
       gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
-
+      animator = GetComponent<Animator>();
+      health = GetComponent<EnemyHealth>();
    }
 
    // Update is called once per frame
-   void Update()
+   void LateUpdate()
    {
       if(!lockHeadMovement)DirToPlayer = PlayerPos.position - head.position;
 
@@ -48,14 +52,13 @@ public class DemonBehavior : MonoBehaviour
          transform.localScale = directionScale;
       }// Set the scale to make the demon face the player on the x-axis
 
-      if (!lockHeadMovement)
+
+      if (transform.localScale.x < 1)
       {
-         if (transform.localScale.x < 1)
-         {
-            head.right = -DirToPlayer;
-         }
-         else head.right = DirToPlayer;
+         head.right =Vector3.Lerp(head.right,-DirToPlayer,lookLerpSpeed);
       }
+      else head.right = Vector3.Lerp(head.right, DirToPlayer, lookLerpSpeed);
+
       //Make the head look at the player
 
       if (cooldownLeft > 0)
@@ -63,6 +66,13 @@ public class DemonBehavior : MonoBehaviour
          cooldownLeft -= Time.deltaTime;
       }//Decrease the cooldown
 
+      animator.SetBool("canAttack", canAttack);
+
+      if (!health.isAlive)
+      {
+         animator.SetBool("isAlive", false);
+         Destroy(gameObject, 1.5f);
+      }
    }
 
    private void FixedUpdate()
@@ -87,6 +97,7 @@ public class DemonBehavior : MonoBehaviour
             }
          }
       }
+
    }
 
    public void prepareAttack()
@@ -104,12 +115,15 @@ public class DemonBehavior : MonoBehaviour
    {
       isAttacking = false;
       flamePS.Stop();
-      lockHeadMovement=false;
       canAttack = false;
       cooldownLeft = attackCooldown;
    }
 
+   public void unlockHead()
+   {
+      lockHeadMovement = false;
 
+   }
 }
 
 

@@ -1821,7 +1821,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8979027969565029040, guid: 72c28889c54bfd34984c9083ec0024c7, type: 3}
       propertyPath: yVelocity
-      value: 1.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8979027969565029042, guid: 72c28889c54bfd34984c9083ec0024c7, type: 3}
       propertyPath: m_RootOrder
