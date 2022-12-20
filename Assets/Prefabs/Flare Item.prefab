@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.2
-  deadZone: 0
+  deadZone: 40
   flareModifyer: 1
 --- !u!212 &550336672067517344
 SpriteRenderer:

@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.2
-  deadZone: 0
+  deadZone: 40
   healModifyer: 30
 --- !u!70 &-4834124894219824655
 CapsuleCollider2D:
