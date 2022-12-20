@@ -482,7 +482,7 @@ TextureImporter:
         width: 5
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -503,7 +503,7 @@ TextureImporter:
         width: 5
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -524,7 +524,7 @@ TextureImporter:
         width: 5
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -545,7 +545,7 @@ TextureImporter:
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -566,7 +566,7 @@ TextureImporter:
         width: 4
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -587,7 +587,7 @@ TextureImporter:
         width: 4
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -595,6 +595,132 @@ TextureImporter:
       bones: []
       spriteID: b488dcfa29e8bbb42aafa598b226bcaa
       internalID: -598689292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalagtite
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 973
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47535b9aa88e4254cb0b5fab009230c9
+      internalID: 20944418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalagtite_Particle_1
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1001
+        width: 2
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ace4158aacab94c9dbfa45af317d98
+      internalID: -1194964266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalagtite_Particle_2
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 997
+        width: 4
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2e4f3f3138eb541be07516edea56ba
+      internalID: 1113272522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalagtite_Particle_3
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1001
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8082c675a31be2f41840f1dcd1729165
+      internalID: 1289894450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stalagtite_Particle_4
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1001
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe06b1d2e531764e905e36db4f647a1
+      internalID: -1812391642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 996
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf69132d329ee646a191140419104b8
+      internalID: -379376140
       vertices: []
       indices: 
       edges: []
@@ -610,7 +736,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Floor_TL: 2029078956
+      Floor_Top: -792221919
       Floor_Left: -458109617
       Floor_TB: -509689590
       Floor_BRL: -669366105
@@ -618,8 +744,11 @@ TextureImporter:
       Boulder_Particle_1: -2112022875
       Boulder_Particle_3: 85194292
       Floor_Bottom: 1731495261
+      Stalagtite_Particle_4: -1812391642
+      5: -379376140
       Floor_TRL: 1422066816
       Boulder_Particle_5: 37853185
+      Stalagtite: 20944418
       Floor: 1152305508
       Floor_RL: -891937068
       Floor_Right: 591341358
@@ -627,12 +756,15 @@ TextureImporter:
       Floor_BR: -1775376863
       Boulder_Particle_4: -1424851267
       Floor_TBR: -698866286
+      Stalagtite_Particle_1: -1194964266
       Bolder: 2053884457
+      Stalagtite_Particle_2: 1113272522
       Boulder_Particle_2: 1582482613
       Floor_TBL: -2023867120
       Boulder_Particle_6: -598689292
       Floor_BL: -766051018
-      Floor_Top: -792221919
+      Stalagtite_Particle_3: 1289894450
+      Floor_TL: 2029078956
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
