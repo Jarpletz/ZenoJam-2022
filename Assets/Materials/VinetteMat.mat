@@ -19,8 +19,8 @@ Material:
   stringTagMap:
     RenderType: Transparent
   disabledShaderPasses:
-  - DepthOnly
   - SHADOWCASTER
+  - DepthOnly
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -53,7 +53,7 @@ Material:
     - Vector1_b09af581d06e41d4a43e7e2d3b7883df: 0.09
     - Vector1_be074ae158eb4ab0a0a7c0024ff6da82: 1.13
     - _AlphaClip: 0
-    - _AmntShaded: 0.35
+    - _AmntShaded: 1.07
     - _BUILTIN_AlphaClip: 1
     - _BUILTIN_Blend: 0
     - _BUILTIN_CullMode: 2
@@ -73,8 +73,8 @@ Material:
     - _DecalMeshViewBias: 0
     - _DrawOrder: 0
     - _DstBlend: 10
-    - _QueueControl: 0
-    - _QueueOffset: 0
+    - _QueueControl: 1
+    - _QueueOffset: 50
     - _SrcBlend: 5
     - _Surface: 1
     - _ZTest: 4
@@ -82,7 +82,7 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - Color_b9e0ece842da48b5a6b5f247a5d35914: {r: 1, g: 0, b: 0.032221794, a: 1}
-    - _Color: {r: 1, g: 0, b: 0, a: 1}
+    - _Color: {r: 1, g: 0.023584902, b: 0.039454572, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &6826481371457702435
 MonoBehaviour:
