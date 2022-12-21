@@ -14,16 +14,23 @@ public class PowerUpSpawnerScript : MonoBehaviour
     private float timer = 0;
     
     [SerializeField] private float offSet = 18;
+
+    GameManager gm;
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
+      gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
 
-    // Update is called once per frame
-    void Update()
+   }
+
+   // Update is called once per frame
+   void Update()
     {
-        copterPoss = GameObject.FindWithTag("Player").transform.position;
+      if (!gm.hasStartedGame)
+      {
+         return;
+      }
+      copterPoss = GameObject.FindWithTag("Player").transform.position;
         spawnerPoss = transform.position;
         transform.position = new Vector3(spawnerPoss.x, copterPoss.y+10, spawnerPoss.z);
         if (timer < spawnRate)

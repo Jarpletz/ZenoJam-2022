@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+   [SerializeField] KeyCode startKey;
+
    GameObject player;
+   float playerStartPos;
 
    public float maxHealth;
    public float health;
@@ -14,6 +17,9 @@ public class GameManager : MonoBehaviour
 
    public float score;
    public float highScore;
+
+   public bool hasStartedGame=false;
+   public bool hasDied=false;
 
 
    // Start is called before the first frame update
@@ -28,14 +34,25 @@ public class GameManager : MonoBehaviour
       //Adds Dont Destroy on Load
 
       player = GameObject.FindWithTag("Player");
+      playerStartPos = player.transform.position.y;
    }
 
    // Update is called once per frame
    void Update()
    {
-      if (player.transform.position.y > score)
+      if(!hasStartedGame && Input.GetKeyDown(startKey))
       {
-         score = player.transform.position.y;
+         hasStartedGame= true;
+      }
+
+      if (health <= 0)
+      {
+         hasDied = true;
+      }
+
+      if (player.transform.position.y-playerStartPos > score && !hasDied)
+      {
+         score = player.transform.position.y-playerStartPos;
       }
    }
 }
