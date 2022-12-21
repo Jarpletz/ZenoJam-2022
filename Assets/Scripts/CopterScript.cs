@@ -14,12 +14,14 @@ public class CopterScript : MonoBehaviour
     private Vector3 newScail;
 
     GameManager gameManager;
-    
+    Animator animator; 
+
     private int key;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         newScail = rb.transform.localScale;
     }
@@ -27,6 +29,14 @@ public class CopterScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (!gameManager.hasStartedGame)
+        {
+           return;
+        }
+        else
+        {
+          animator.SetBool("hasStarted", true);
+        }
         if (Input.GetAxis("Horizontal") > 0)
         {
             key = 1;
