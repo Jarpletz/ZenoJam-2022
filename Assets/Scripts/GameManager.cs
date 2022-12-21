@@ -7,13 +7,14 @@ public class GameManager : MonoBehaviour
 {
    [SerializeField] KeyCode startKey;
 
-   GameObject player;
+   [SerializeField] GameObject player;
    float playerStartPos;
 
    public float maxHealth;
    public float health;
 
    public float flares;
+   public float startingFlares;
 
    public float score;
    public float highScore;
@@ -35,12 +36,15 @@ public class GameManager : MonoBehaviour
 
       player = GameObject.FindWithTag("Player");
       if(player!=null) playerStartPos = player.transform.position.y;
+      flares = startingFlares;
    }
 
    // Update is called once per frame
    void Update()
    {
-      if(!hasStartedGame && Input.GetKeyDown(startKey))
+      player = GameObject.FindWithTag("Player");
+
+      if (!hasStartedGame && Input.GetKeyDown(startKey))
       {
          hasStartedGame= true;
       }
@@ -54,5 +58,13 @@ public class GameManager : MonoBehaviour
       {
          score = player.transform.position.y-playerStartPos;
       }
+
+      if (score > highScore)
+      {
+         highScore = score;
+      }
+
    }
+
+   
 }
