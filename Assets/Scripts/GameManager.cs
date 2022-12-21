@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
       //Adds Dont Destroy on Load
 
       player = GameObject.FindWithTag("Player");
-      playerStartPos = player.transform.position.y;
+      if(player!=null) playerStartPos = player.transform.position.y;
    }
 
    // Update is called once per frame
@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
          hasDied = true;
       }
 
-      if (player.transform.position.y-playerStartPos > score && !hasDied)
+      if (player!=null && player.transform.position.y-playerStartPos > score && !hasDied)
       {
          score = player.transform.position.y-playerStartPos;
       }

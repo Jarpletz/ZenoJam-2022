@@ -221,6 +221,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Bar_Inside
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 731
+        width: 90
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 3, y: 0, z: 3, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c17cbbb6adf14d41bc8c8891dab6b3c
+      internalID: -402159294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bar_Outside
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 713
+        width: 96
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 5, y: 1, z: 5, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb7b9398a415c040863230ac880951b
+      internalID: -1677094136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -236,6 +278,8 @@ TextureImporter:
       Icon_Healthpack: 2057720590
       Icon_Shield: 1079462303
       Icon_Background: -1653572918
+      Bar_Outside: -1677094136
+      Bar_Inside: -402159294
       Icon_Flare: 2095584641
   spritePackingTag: 
   pSDRemoveMatte: 0
