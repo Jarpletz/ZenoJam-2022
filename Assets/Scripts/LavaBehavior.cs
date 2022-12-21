@@ -6,22 +6,28 @@ using UnityEngine;
 public class LavaBehavior : MonoBehaviour
 {
    LevelGenerator levelGenerator;
+   Transform playerPos;
    Vector3 nextPos;
 
    [SerializeField] float yVelocity;
    [SerializeField] float yOffset;
 
-
+   [SerializeField] float minPlayerY;
    void Start()
    {
       levelGenerator = GameObject.FindWithTag("LevelGenerator").GetComponent<LevelGenerator>();
-      
+      playerPos = GameObject.FindWithTag("Player").transform;
 
    }
 
    // Update is called once per frame
    void Update()
    {
+      if (playerPos.position.y < minPlayerY)
+      {
+         return;
+      }//Only raise the lava if the player is above the start level
+
       nextPos.Set(0, transform.position.y + (yVelocity * Time.deltaTime), 0);
       //Move Lava up
 

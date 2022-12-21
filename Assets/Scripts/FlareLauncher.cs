@@ -28,7 +28,7 @@ public class FlareLauncher : MonoBehaviour
       transform.up =Vector2.Lerp(transform.up,DirToMouse,lerpSpeed);
       //Debug.DrawRay(transform.position,transform.up*10);
 
-      if (Input.GetMouseButtonDown(0) && gm.flares>0)
+      if (Input.GetMouseButtonDown(0) && gm.flares>0 && gm.hasStartedGame)
       {
          GameObject flare = Instantiate(flareObject);
          flare.transform.position = transform.position;

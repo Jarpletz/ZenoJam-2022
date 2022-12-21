@@ -13,12 +13,13 @@ public class UI_Manager : MonoBehaviour
 
 
    GameManager gm;
-
+   Animator animator;
 
    // Start is called before the first frame update
    void Start()
    {
       gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+      animator = GetComponent<Animator>();
 
       HealthSlider.maxValue = gm.maxHealth;
 
@@ -31,6 +32,9 @@ public class UI_Manager : MonoBehaviour
       FlareText.text = ": " + gm.flares.ToString("0");
 
       HealthSlider.value = gm.health;
+
+      animator.SetBool("hasStarted", gm.hasStartedGame);
+      animator.SetBool("hasDied", gm.hasDied);
 
    }
 }
