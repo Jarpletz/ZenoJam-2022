@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
       GameObject[] managers = GameObject.FindGameObjectsWithTag("GameManager");
       if (managers.Length > 1)
       {
+         //managers[0].GetComponent<GameManager>().resetGM();
          Destroy(this.gameObject);
       }
       DontDestroyOnLoad(this.gameObject);
@@ -64,6 +65,14 @@ public class GameManager : MonoBehaviour
          highScore = score;
       }
 
+   }
+   public void resetGM()
+   {
+      health = maxHealth;
+      score = 0;
+      flares = startingFlares;
+      hasDied = false;
+      hasStartedGame = false;
    }
 
    

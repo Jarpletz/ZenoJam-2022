@@ -64,7 +64,7 @@ public class bloodVinette : MonoBehaviour
         currentlyShaded = Mathf.Clamp(currentlyShaded, shadeRange.x, shadeRange.y);
         image.material.SetFloat("_AmntShaded", currentlyShaded);
 
-        prevHealth = Mathf.Lerp(prevHealth, gm.health, currentPercent *lerpModifier) ;
+        prevHealth = Mathf.Lerp(prevHealth, gm.health, /*currentPercent **/lerpModifier) ;
         
     }
 

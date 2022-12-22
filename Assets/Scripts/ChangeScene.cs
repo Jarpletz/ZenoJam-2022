@@ -15,11 +15,7 @@ public class ChangeScene : MonoBehaviour
    public void ResetGM()
    {
       GameManager gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
-      gm.health = gm.maxHealth;
-      gm.score = 0;
-      gm.flares = gm.startingFlares;
-      gm.hasDied = false;
-      gm.hasStartedGame = false;
+      gm.resetGM();
       
    }
 
