@@ -49,5 +49,6 @@ MonoBehaviour:
   copterPoss: {x: 0, y: 0, z: 0}
   spawnerPoss: {x: 0, y: 0, z: 0}
   spawnRate: 10
+  flareChance: 60
   startTorque: 0
   offSet: 18

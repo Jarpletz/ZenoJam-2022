@@ -10,6 +10,7 @@ public class PowerUpSpawnerScript : MonoBehaviour
     [SerializeField] Vector3 copterPoss;
     [SerializeField] Vector3 spawnerPoss;
     [SerializeField] float spawnRate = 10;
+    [SerializeField] float flareChance;
     [SerializeField] float startTorque;
     private float timer = 0;
     
@@ -46,8 +47,8 @@ public class PowerUpSpawnerScript : MonoBehaviour
 
     void spawnPowerUp()
     {
-        int random = Random.Range(0, 2);
-        if (random != 1)
+        int random = Random.Range(0, 100);
+        if (random < flareChance)
         {
             powerUp = flare;
         }
