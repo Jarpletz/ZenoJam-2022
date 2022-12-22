@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class UI_Manager : MonoBehaviour
 {
    [SerializeField] TextMeshProUGUI ScoreText;
+   [SerializeField] TextMeshProUGUI HsText;
    [SerializeField] TextMeshProUGUI FlareText;
 
    [SerializeField] Slider HealthSlider;
@@ -29,6 +30,7 @@ public class UI_Manager : MonoBehaviour
    void Update()
    {
       ScoreText.text = "Score: " + gm.score.ToString("0");
+      HsText.text = "HS: " + gm.highScore.ToString("0");
       FlareText.text = ": " + gm.flares.ToString("0");
 
       HealthSlider.value = gm.health;

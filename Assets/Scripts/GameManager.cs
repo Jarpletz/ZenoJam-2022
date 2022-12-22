@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 public class GameManager : MonoBehaviour
 {
@@ -34,6 +36,8 @@ public class GameManager : MonoBehaviour
       DontDestroyOnLoad(this.gameObject);
       //Adds Dont Destroy on Load
 
+      loadData();
+
       player = GameObject.FindWithTag("Player");
       if(player!=null) playerStartPos = player.transform.position.y;
       flares = startingFlares;
@@ -52,6 +56,7 @@ public class GameManager : MonoBehaviour
       if (health <= 0)
       {
          hasDied = true;
+         saveData();
       }
 
       if (player!=null && player.transform.position.y-playerStartPos > score && !hasDied)
@@ -74,5 +79,35 @@ public class GameManager : MonoBehaviour
       hasStartedGame = false;
    }
 
-   
+   void saveData()
+   {
+      BinaryFormatter formatter = new BinaryFormatter();
+      string path = Application.persistentDataPath + Path.DirectorySeparatorChar + "saveData.fun";
+
+      FileStream stream = new FileStream(path, FileMode.Create);
+
+      formatter.Serialize(stream, highScore);
+      stream.Close();
+
+   }
+
+   void loadData()
+   {
+      string path = Application.persistentDataPath + Path.DirectorySeparatorChar + "saveData.fun";
+
+      if (File.Exists(path))
+      {
+         BinaryFormatter formatter = new BinaryFormatter();
+         FileStream stream = new FileStream(path, FileMode.Open);
+         highScore = (float)formatter.Deserialize(stream);
+         stream.Close();
+         return;
+      }
+      else
+      {
+         Debug.Log("Save File not found in "+path);
+         return;
+      }
+   }
+
 }

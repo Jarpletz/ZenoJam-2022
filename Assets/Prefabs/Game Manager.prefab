@@ -46,9 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startKey: 119
+  player: {fileID: 0}
   maxHealth: 100
   health: 100
   flares: 10
+  startingFlares: 10
   score: 0
   highScore: 0
   hasStartedGame: 0
