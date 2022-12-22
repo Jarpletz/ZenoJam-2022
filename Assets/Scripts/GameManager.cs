@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
    public bool hasStartedGame=false;
    public bool hasDied=false;
 
-
    // Start is called before the first frame update
    void Awake()
    {

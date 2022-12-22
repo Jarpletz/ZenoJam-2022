@@ -37,4 +37,8 @@ public class UI_Manager : MonoBehaviour
       animator.SetBool("hasDied", gm.hasDied);
 
    }
+   public void showCredits()
+   {
+      animator.SetBool("showCredits", true);
+   }
 }
