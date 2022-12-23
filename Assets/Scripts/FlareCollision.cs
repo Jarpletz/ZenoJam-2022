@@ -13,6 +13,7 @@ public class FlareCollision : MonoBehaviour
 
    Rigidbody2D rb;
    CircleCollider2D cd;
+   SoundManager sound;
 
    float timeAlive;
    bool hasCollided;
@@ -21,6 +22,9 @@ public class FlareCollision : MonoBehaviour
    {
       rb=GetComponent<Rigidbody2D>();
       cd=GetComponent<CircleCollider2D>();
+      sound = GetComponent<SoundManager>();
+
+     
    }
 
    // Update is called once per frame
@@ -46,6 +50,8 @@ public class FlareCollision : MonoBehaviour
 
       flightParticles.Stop();
       explosionParticles.Play();
+      sound.playSound("FlareHit",1);
+
 
       EnemyHealth eHealth = collision.gameObject.GetComponent<EnemyHealth>();
       if (eHealth != null)
