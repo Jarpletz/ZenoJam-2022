@@ -634,7 +634,7 @@ MonoBehaviour:
   lookLerpSpeed: 0.3
   attackRange: 13
   attackCooldown: 2
-  damagePerSecond: 15
+  damagePerSecond: 9
   raycastLayers:
     serializedVersion: 2
     m_Bits: 9

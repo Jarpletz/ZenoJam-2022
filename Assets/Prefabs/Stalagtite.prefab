@@ -53,7 +53,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 9
   deadZone: 50
-  damage: 15
+  damage: 9
   maxRange: 13
   destructionParticles: {fileID: 3930286744352599088}
 --- !u!60 &7124122705953347745
