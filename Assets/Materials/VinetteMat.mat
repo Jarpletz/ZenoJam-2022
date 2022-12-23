@@ -53,7 +53,7 @@ Material:
     - Vector1_b09af581d06e41d4a43e7e2d3b7883df: 0.09
     - Vector1_be074ae158eb4ab0a0a7c0024ff6da82: 1.13
     - _AlphaClip: 0
-    - _AmntShaded: 2
+    - _AmntShaded: 0.5
     - _BUILTIN_AlphaClip: 1
     - _BUILTIN_Blend: 0
     - _BUILTIN_CullMode: 2
