@@ -8,6 +8,7 @@ public class Stalagtite : MonoBehaviour
     [SerializeField] private LayerMask raycastLayer;
     [SerializeField] float deadZone;
     [SerializeField] private float damage;
+    [SerializeField] float maxRange;
     [SerializeField] ParticleSystem destructionParticles;
     Transform PlayerPos;
     GameManager gm;
@@ -33,7 +34,7 @@ public class Stalagtite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 50, raycastLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, maxRange, raycastLayer);
 
         if (hit.collider != null)
         {
