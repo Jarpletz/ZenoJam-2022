@@ -48,4 +48,13 @@ public class deathUI : MonoBehaviour
    {
       GetComponent<Animator>().SetBool("Restart", true);
    }
+
+   public void playNewHsSound()
+   {
+      if (gm.score >= gm.highScore)
+      {
+         GetComponent<SoundManager>().playSound("NewHighscore");
+      }
+   }
+
 }

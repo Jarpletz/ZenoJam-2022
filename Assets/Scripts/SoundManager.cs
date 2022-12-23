@@ -31,7 +31,12 @@ public class SoundManager : MonoBehaviour
             source = GameObject.FindWithTag("GameManager").GetComponent<AudioSource>();
         }
         else  source = GetComponent<AudioSource>();
-        player = GameObject.FindWithTag("Player").transform;
+        if (GameObject.FindWithTag("Player"))
+        {
+
+
+           player = GameObject.FindWithTag("Player").transform;
+        }
 
     }
     private void Update()

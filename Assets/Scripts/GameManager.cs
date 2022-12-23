@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
    void saveData()
    {
       BinaryFormatter formatter = new BinaryFormatter();
-      string path = Application.persistentDataPath + Path.DirectorySeparatorChar + "saveData.fun";
+      string path = Application.persistentDataPath + Path.DirectorySeparatorChar + "theSaveData.fun";
 
       FileStream stream = new FileStream(path, FileMode.Create);
 
@@ -97,7 +97,7 @@ public class GameManager : MonoBehaviour
 
    void loadData()
    {
-      string path = Application.persistentDataPath + Path.DirectorySeparatorChar + "saveData.fun";
+      string path = Application.persistentDataPath + Path.DirectorySeparatorChar + "theSaveData.fun";
 
       if (File.Exists(path))
       {
