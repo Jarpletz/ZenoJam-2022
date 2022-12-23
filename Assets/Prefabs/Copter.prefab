@@ -684,7 +684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   force: 13
   verticalForceDamp: 1.99
-  volumeRange: {x: 0.1, y: 0.3}
+  volumeRange: {x: 0.1, y: 0.4}
   maxVelocity: 7
 --- !u!70 &1232836974752589444
 CapsuleCollider2D:

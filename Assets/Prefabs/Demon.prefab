@@ -785,17 +785,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleSoundByDistance: 1
-  soundRange: {x: 1, y: 14}
+  soundRange: {x: 1, y: 20}
   maxVolume: 1
+  volume: 1
   soundEffects:
   - clips:
-    - {fileID: 8300000, guid: 7d1184499e868f24ab8a25d43c7fb1b3, type: 3}
+    - {fileID: 8300000, guid: 4565be7c6924065409237034a5febccf, type: 3}
     soundName: DemonFire
     noOverlap: 0
     overlapTime: 0
     timer: 0
   - clips:
-    - {fileID: 8300000, guid: 7d1184499e868f24ab8a25d43c7fb1b3, type: 3}
     - {fileID: 8300000, guid: 3548fc1a9ee0849aea79bd982d39ab8a, type: 3}
     - {fileID: 8300000, guid: 297346eead9724a3b9f6447e2768e267, type: 3}
     - {fileID: 8300000, guid: 52d15268b8f9645769df8c06cf966ca0, type: 3}

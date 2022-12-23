@@ -744,8 +744,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8483664148bce4a94ac245010b216c8a, type: 3}
   - {fileID: 8300000, guid: e38c27e0a59514620b87be1a33987ea5, type: 3}
   - {fileID: 8300000, guid: 426568205bb5a46dea32bbf59e6efa3f, type: 3}
-  menuVolume: 0.02
-  playVolume: 0.1
+  menuVolume: 0.1
+  playVolume: 0.2
   fadeSpeed: 0
 --- !u!1 &619394800
 GameObject:
@@ -1677,7 +1677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aace683c6b7b106418510b8f574fee65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleSoundByDistance: 1
+  scaleSoundByDistance: 0
   soundRange: {x: 1, y: 9}
   maxVolume: 1
   volume: 1
@@ -1758,7 +1758,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7945511171974768529, guid: 72c28889c54bfd34984c9083ec0024c7, type: 3}
       propertyPath: soundRange.y
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8979027969565029040, guid: 72c28889c54bfd34984c9083ec0024c7, type: 3}
       propertyPath: yVelocity

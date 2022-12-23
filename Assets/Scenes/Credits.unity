@@ -993,7 +993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aace683c6b7b106418510b8f574fee65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleSoundByDistance: 1
+  scaleSoundByDistance: 0
   soundRange: {x: 1, y: 9}
   maxVolume: 1
   volume: 1

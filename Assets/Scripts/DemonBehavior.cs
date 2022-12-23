@@ -71,7 +71,7 @@ public class DemonBehavior : MonoBehaviour
       if (!health.isAlive)
       {
          animator.SetBool("isAlive", false);
-         GetComponent<SoundManager>().playSound("DemonDeath", 0.5f);
+         GetComponent<SoundManager>().playSound("DemonDeath", 1.6f);
          Destroy(gameObject, 1.5f);
       }
    }
