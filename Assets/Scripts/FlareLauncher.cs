@@ -35,7 +35,7 @@ public class FlareLauncher : MonoBehaviour
             GameObject flare = Instantiate(flareObject);
             flare.transform.position = transform.position;
             flare.GetComponent<Rigidbody2D>().AddForce(DirToMouse * launchForce, ForceMode2D.Impulse);
-            GetComponent<SoundManager>().playSound("FlareLaunch", 1);
+            GetComponent<SoundManager>().playSound("FlareLaunch", 0.6f);
             gm.flares--;
          }
          else
