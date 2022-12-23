@@ -53,6 +53,7 @@ public class Stalagtite : MonoBehaviour
         stalalgtiteCollider.enabled = false;
         sp.enabled = false;
         destructionParticles.Play();
+        GetComponent<SoundManager>().playSound("stalagtiteHit", 1);
         Destroy(gameObject, 1);
 
         if (collision.gameObject.CompareTag("Player"))
