@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FlareItemScript : MonoBehaviour
@@ -11,10 +12,8 @@ public class FlareItemScript : MonoBehaviour
     private Vector2 netForce;
     Transform PlayerPos;
     [SerializeField] float deadZone;
+    [SerializeField] int flaresGiven;
 
-
-    
-    [SerializeField] private float flareModifyer = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,7 +41,7 @@ public class FlareItemScript : MonoBehaviour
         //print("here");
         if (other.gameObject.CompareTag("Player"))
         {
-            gm.flares += flareModifyer;
+            gm.flares += flaresGiven;
             Destroy(gameObject);
         }
     }
