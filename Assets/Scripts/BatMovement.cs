@@ -79,6 +79,7 @@ public class BatMovement : MonoBehaviour
       {
          
          col.enabled = false;
+         GetComponent<SoundManager>().playSound("BatDeath", 1);
          rb.rotation = 180;
          deadForce.Set(0, -2);
          rb.AddForce(deadForce);

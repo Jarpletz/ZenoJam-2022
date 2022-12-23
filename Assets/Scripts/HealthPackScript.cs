@@ -36,8 +36,10 @@ public class HealthPackScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        
         if (other.gameObject.CompareTag("Player"))
         {
+            GetComponent<SoundManager>().playSound("Rise01", 1);
             if (gm.health > (gm.maxHealth - healModifyer))
             {
                 gm.health = gm.maxHealth;
@@ -46,6 +48,7 @@ public class HealthPackScript : MonoBehaviour
             {
                 gm.health += healModifyer;
             }
+
             Destroy(gameObject);
         }
     }

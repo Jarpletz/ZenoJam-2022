@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -4834124894219824655}
   - component: {fileID: 4812695095999318495}
   - component: {fileID: -3552226039110819123}
+  - component: {fileID: -4677747985855265234}
   m_Layer: 10
   m_Name: HealthPack
   m_TagString: Untagged
@@ -140,6 +141,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-4677747985855265234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797638572168293714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aace683c6b7b106418510b8f574fee65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleSoundByDistance: 1
+  soundRange: {x: 1, y: 9}
+  maxVolume: 1
+  soundEffects:
+  - clips:
+    - {fileID: 8300000, guid: bf325adba7eb04b93ad1ff55a3b700bd, type: 3}
+    soundName: Rise01
+    noOverlap: 0
+    overlapTime: 0
+    timer: 0
 --- !u!1 &5612911115259041791
 GameObject:
   m_ObjectHideFlags: 0
