@@ -208,7 +208,7 @@ MonoBehaviour:
   - {fileID: 7149434766167249742}
   - {fileID: 7746862852140620342}
   speed: 6
-  distanceThreshold: 0.3
+  distanceThreshold: 0.004
   slownessMultiplier: 2
 --- !u!50 &1119799202553142599
 Rigidbody2D:
