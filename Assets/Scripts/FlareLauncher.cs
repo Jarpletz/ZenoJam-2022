@@ -28,12 +28,22 @@ public class FlareLauncher : MonoBehaviour
       transform.up =Vector2.Lerp(transform.up,DirToMouse,lerpSpeed);
       //Debug.DrawRay(transform.position,transform.up*10);
 
-      if (Input.GetMouseButtonDown(0) && gm.flares>0 && gm.hasStartedGame)
+      if (Input.GetMouseButtonDown(0) && gm.hasStartedGame)
       {
-         GameObject flare = Instantiate(flareObject);
-         flare.transform.position = transform.position;
-         flare.GetComponent<Rigidbody2D>().AddForce(DirToMouse * launchForce, ForceMode2D.Impulse);
-         gm.flares--;
+         if (gm.flares > 0)
+         {
+            GameObject flare = Instantiate(flareObject);
+            flare.transform.position = transform.position;
+            flare.GetComponent<Rigidbody2D>().AddForce(DirToMouse * launchForce, ForceMode2D.Impulse);
+            GetComponent<SoundManager>().playSound("FlareLaunch", 0.6f);
+            gm.flares--;
+         }
+         else
+         {
+            GetComponent<SoundManager>().playSound("OutOfFlares", 1);
+
+         }
+
       }
    }
 }
