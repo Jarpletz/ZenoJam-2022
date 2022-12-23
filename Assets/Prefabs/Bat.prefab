@@ -258,7 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleSoundByDistance: 1
   soundRange: {x: 1, y: 9}
-  maxVolume: 0.3
+  maxVolume: 0.006
   soundEffects:
   - clips:
     - {fileID: 8300000, guid: aad80fff7dfc1d2478c04b9653f26a37, type: 3}
