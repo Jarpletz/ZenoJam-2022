@@ -1,6 +1,6 @@
+using Mono.Cecil.Cil;
 using System.Collections;
 using System.Collections.Generic;
-using System.Xml.Serialization;
 using UnityEngine;
 
 public class LavaBehavior : MonoBehaviour
@@ -8,6 +8,7 @@ public class LavaBehavior : MonoBehaviour
    LevelGenerator levelGenerator;
    Transform playerPos;
    Vector3 nextPos;
+   SoundManager sound;
 
    [SerializeField] float yVelocity;
    [SerializeField] float yOffset;
@@ -17,7 +18,9 @@ public class LavaBehavior : MonoBehaviour
    {
       levelGenerator = GameObject.FindWithTag("LevelGenerator").GetComponent<LevelGenerator>();
       playerPos = GameObject.FindWithTag("Player").transform;
+      sound=GetComponent<SoundManager>();
 
+      
    }
 
    // Update is called once per frame
@@ -37,6 +40,7 @@ public class LavaBehavior : MonoBehaviour
       }
       //If below lowest generated level, move it up to the bottom of the level
       transform.position = nextPos;
+
 
    }
 

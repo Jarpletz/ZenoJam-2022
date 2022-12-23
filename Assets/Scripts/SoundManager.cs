@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 
 public class SoundManager : MonoBehaviour
@@ -9,7 +10,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] Vector2 soundRange=new Vector2(1f,9f);
     [SerializeField] float maxVolume = 1;
     [Header("If no AudioSource Component, uses one in gameManager")]
-    float volume=1;
+    [SerializeField] float volume=1;
 
     Transform player;
     [System.Serializable] public class soundEffect
@@ -58,9 +59,11 @@ public class SoundManager : MonoBehaviour
             {
                 volume = Mathf.Lerp(0, 1, 1 - (dist / soundRange.y));
             }
-            volume = Mathf.Clamp(source.volume, 0, maxVolume);
+            volume = Mathf.Clamp(volume, 0, maxVolume);
 
         }
+        source.volume=volume;
+       
     }
     public void playSound(string soundName, float volumeMult = 1f)
     {

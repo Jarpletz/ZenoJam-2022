@@ -6,6 +6,7 @@ public class PlayerLavaCollision : MonoBehaviour
 {
    GameManager gm;
    GameObject Player;
+   SoundManager sound;
 
    [SerializeField] float damagePerSecond;
    [SerializeField] float slownessMultiplier;
@@ -14,6 +15,9 @@ public class PlayerLavaCollision : MonoBehaviour
    {
       Player = GameObject.FindWithTag("Player");
       gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
+      sound=GetComponent<SoundManager>();
+
+
    }
 
    private void OnTriggerEnter2D(Collider2D collision)
@@ -22,6 +26,7 @@ public class PlayerLavaCollision : MonoBehaviour
       {
          Player.GetComponent<Rigidbody2D>().velocity /= slownessMultiplier;
          Player.GetComponent<CopterScript>().force /= slownessMultiplier;
+         sound.playSound("LavaTouch", 1);
       }
    }
 

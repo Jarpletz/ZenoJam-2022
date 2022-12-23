@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1414611973700709219}
   - component: {fileID: 550336672067517344}
   - component: {fileID: -6311892735323691560}
+  - component: {fileID: 1617897829866367223}
   m_Layer: 10
   m_Name: Flare Item
   m_TagString: Untagged
@@ -66,7 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.2
   deadZone: 40
-  flaresGiven: 5
+  flaresGiven: 10
 --- !u!212 &550336672067517344
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -140,6 +141,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1617897829866367223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520890287750540382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aace683c6b7b106418510b8f574fee65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleSoundByDistance: 1
+  soundRange: {x: 1, y: 9}
+  maxVolume: 1
+  volume: 1
+  soundEffects:
+  - clips:
+    - {fileID: 8300000, guid: 422083e56ca8fac46b3349c86446bd81, type: 3}
+    soundName: PickupFlare
+    noOverlap: 0
+    overlapTime: 0
+    timer: 0
 --- !u!1 &8598233625823126541
 GameObject:
   m_ObjectHideFlags: 0

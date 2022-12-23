@@ -48,7 +48,7 @@ MonoBehaviour:
   healthPack: {fileID: 1797638572168293714, guid: 0da97ca82bc554370a1a5bf9a04f06eb, type: 3}
   copterPoss: {x: 0, y: 0, z: 0}
   spawnerPoss: {x: 0, y: 0, z: 0}
-  spawnRate: 18
-  flareChance: 50
+  spawnRate: 30
+  flareChance: 60
   startTorque: 0
   offSet: 18

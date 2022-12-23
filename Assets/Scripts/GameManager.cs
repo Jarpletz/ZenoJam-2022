@@ -69,6 +69,10 @@ public class GameManager : MonoBehaviour
          highScore = score;
       }
 
+      if (player != null)
+      {
+         transform.position = player.transform.position;
+      }
    }
    public void resetGM()
    {

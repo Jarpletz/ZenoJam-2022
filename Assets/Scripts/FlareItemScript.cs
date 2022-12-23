@@ -42,6 +42,7 @@ public class FlareItemScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             gm.flares += flaresGiven;
+         GetComponent<SoundManager>().playSound("PickupFlare");
             Destroy(gameObject);
         }
     }
